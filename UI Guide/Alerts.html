@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+
+.material-icons {
+	font-size: 40px;
+}
+
+#warning {
+	position:relative;
+}
+
+#star {
+	position: relative;
+}
+
+.badge {
+	position: absolute;
+	top: 10px;
+}
+
+#dark-nav {
+	background-color: #000034 !important;
+}
+
+.container {
+	margin-top: 50px !important;
+}
+</style>
+
+<head>
+	<title>UI Style Guide</title>
+	<nav class="navbar navbar-dark bg-dark" id="dark-nav">
+	<a class="navbar-brand" href="#">
+	<img src="https://www.techonline.com/img/tmp/logo-placeholder.png" width=100 height=100 class="d-inline-block align-middle" alt=" ">
+	US Government Agency | UI Style Guide
+	</a>
+	</nav>
+	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d9b9a;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="Home.html">Home</a>
+		</li>
+       <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Design Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Color Palette.html">Color palette</a>
+		  	<ul class="dropdown-submenu">
+				<li class="dropdown-item"><a tabindex="-1" href="#primary palette">Primary palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#accent palette">Accent palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#gray palette">Gray paleete</a></li>
+			</ul>
+          <a class="dropdown-item" href="Icons.html">Icons</a>
+		  <a class="dropdown-item" href="Typography.html">Typography</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UI Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Alerts.html">Alerts</a>
+          <a class="dropdown-item" href="Badges.html">Badges</a>
+          <a class="dropdown-item" href="Buttons.html">Buttons</a>
+		  <a class="dropdown-item" href="Cards.html">Cards</a>
+		  <a class="dropdown-item" href="Collapse.html">Collapse</a>
+		  <a class="dropdown-item" href="Footers.html">Footers</a>
+		  <a class="dropdown-item" href="Forms.html">Form controls</a>
+		  <a class="dropdown-item" href="Grids.html">Grids</a>
+		  <a class="dropdown-item" href="Headers.html">Headers</a>
+		  <a class="dropdown-item" href="Modals.html">Modals</a>
+		  <a class="dropdown-item" href="Navigation.html">Navigation</a>
+		  <a class="dropdown-item" href="Tables.html">Tables</a>
+		  <a class="dropdown-item" href="Writing.html">Writing</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+<h2 id="overview">Alerts/Notifications</h2>
+<p>Alerts notify the user that an important item/issue needs their attention.  Alerts and notifications will be identifiable based on color and its representative icon.</p>
+<h5>Accessibility</h5>
+<p>Use the ARIA <code>role="alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive.  If the message is interactive, use the <code>alertdialog</code> role instead.</p>
+<p>Graphic contrast should be a ratio of at least 3:1.</p>
+
+
+		<div class="card border-danger shadow p-3 mb-5 bg-white rounded">
+			<div class="card-title"><h4>Alerts</h4></div>
+				<div class="card-body">
+					<div class="alert alert-danger" role="alert">
+ 			 			<i class="material-icons" id="warning">warning</i>
+						<span class="badge badge-pill badge-dark">3</span>
+					</div>
+							<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    	More information
+  		</button>
+
+		<div class="collapse" id="collapseExample">
+  		<div class="card card-body">
+		<pre><code>&lt;div class="alert alert-danger" role="alert"&gt;...&lt;/div&gt;</code></pre>
+		<div class="card-title"><h5>When to use alerts</h5></div>
+					<table class="table table-hover table-sm">
+						<thead>
+							<tr>
+								<th scope="col">Component #</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">01</th>
+								<td>Sealed case</td>
+							</tr>
+							<tr>
+								<th scope="row">02</th>
+								<td>Active warrant</td>
+							</tr>
+							<tr>
+								<th scope="row">03</th>
+								<td>Past due balance</td>
+							</tr>
+							<tr>
+								<th scope="row">04</th>
+								<td>Missing ATN</td>
+							</tr>
+							<tr>
+								<th scope="row">05</th>
+								<td>NSF flag</td>
+							</tr>
+							<tr>
+								<th scope="row">06</th>
+								<td>Criminal/JV without charges</td>
+							</tr>
+							<tr>
+								<th scope="row">07</th>
+								<td>No judge on case except intake</td>
+							</tr>
+							<tr>
+								<th scope="row">08</th>
+								<td>Multiple active judges</td>
+							</tr>
+							<tr>
+								<th scope="row">09</th>
+								<td>Fees on case not on pay plan</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>Defendant on multiple pay plans - same court/location</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+					<hr>
+					<h5>Specifications</h5>
+					<ul>
+						<li>Alerts will feature the "warning" icon to visually distinguish an alert from a notification.</li>
+						<li>The alert will include a badge indicating the number of alerts related to a particular case.</li>
+						<pre><code>&lt;span class="badge badge-dark"&gt;...&lt;/span&gt;</code></pre>
+						<li>Alerts will remain fixed to retain visibility while scrolling.  They will be positioned directly beneath the Case Information Header.</li>
+						<li>Alerts will be clickable with content that expands when clicked.  This allows users to expand and contract content as needed.</li>
+					</ul>
+			</div>
+			
+
+	</div>
+</div>
+
+
+	
+
+		<div class="card border-warning shadow p-3 mb-5 bg-white rounded">
+		<div class="card-title"><h4>Notifications</h4></div>
+			<div class="card-body">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<i class="material-icons" id="star">star</i>
+			<span class="badge badge-pill badge-dark">1</span>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+					<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+    	More information
+  		</button>
+
+		<div class="collapse" id="collapseExample2">
+  		<div class="card card-body">
+					<pre><code>&lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;...&lt;/div&gt;</code></pre>
+					<div class="card-title"><h5>When to use notifications</h5></div>
+					<table class="table table-hover table-sm">
+						<thead>
+							<tr>
+								<th scope="col">Component #</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">11</th>
+								<td>Speedy trial approaching</td>
+							</tr>
+							<tr>
+								<th scope="row">12</th>
+								<td>Rule 4gi closure</td>
+							</tr>
+							<tr>
+								<th scope="row">13</th>
+								<td>Rule 41 closure</td>
+							</tr>
+							<tr>
+								<th scope="row">14</th>
+								<td>Past event open</td>
+							</tr>
+							<tr>
+								<th scope="row">15</th>
+								<td>Juvenile with MF/MD but no JUCO and not "set for review" status</td>
+							</tr>
+							<tr>
+								<th scope="row">16</th>
+								<td>Unserved service documents (except warrants)</td>
+							</tr>
+							<tr>
+								<th scope="row">17</th>
+								<td>Closed case with undisposed charges</td>
+							</tr>
+							<tr>
+								<th scope="row">18</th>
+								<td>Closed case with no MD code (circuit only)</td>
+							</tr>
+							<tr>
+								<th scope="row">19</th>
+								<td>MF/MD docket codes in case but not associated</td>
+							</tr>
+							<tr>
+								<th scope="row">20</th>
+								<td>Litigant on multiple open cases in the same court/location</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+			<hr>
+			<h5>Specifications</h5>
+			<ul>
+				<li>Notifications will feature the "star" icon to signify that it is important content but not critical.</li>
+				<li>The notification will include a badge indicating the number of notifications related to a particular case.</li>
+				<pre><code>&lt;span class="badge badge-dark"&gt;...&lt;/span&gt;</code></pre>
+				<li>Notifications will remain fixed to retain visibility while scrolling but with an option to close the notification bar.  They will be positioned directly beneath the Case Information Header.</li>
+				<li>Notifications will be clickable with content that expands when clicked.  This allows users to expand and contract content as needed.</li>
+			</ul>
+		</div>
+
+
+			</div>
+			</div>
+
+
+
+		
+
+			<div class="card border-info shadow p-3 mb-5">
+				<div class="card-title"><h5>Guidance</h5></div>
+					<div class="card-body">
+						<p class="card-text">
+							<ul>
+								<li>Let users know what needs to be done to address alerts.</li>
+								<li>Be polite in messages.</li>
+								<li>Use concise, readable language - avoid jargon and code.</li>
+								<li>Allow a user to dismiss a notification wherever appropriate.</li>
+								<li>Don't include notifications or alerts that aren't related to their current case view.</li>
+							</ul>
+						</p>
+</div>
+
+</body>
+</html>

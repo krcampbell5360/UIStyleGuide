@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+<style>
+
+.card {
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+.container {
+	margin-top: 50px !important;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.material-icons {
+	position: relative;
+	display: inline-block;
+	vertical-align: left;
+	font-size: 15px;
+}
+
+#dark-nav {
+	background-color: #000034 !important;
+}
+
+</style>
+
+<script>
+
+
+</script>
+<head>
+	<title>UI Style Guide</title>
+	<nav class="navbar navbar-dark bg-dark" id="dark-nav">
+	<a class="navbar-brand" href="#">
+	<img src="https://www.techonline.com/img/tmp/logo-placeholder.png" width=100 height=100 class="d-inline-block align-middle" alt=" ">
+	US Government Agency | UI Style Guide
+	</a>
+	</nav>
+	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d9b9a;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="Home.html">Home</a>
+		</li>
+       <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Design Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Color Palette.html">Color palette</a>
+		  	<ul class="dropdown-submenu">
+				<li class="dropdown-item"><a tabindex="-1" href="#primary palette">Primary palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#accent palette">Accent palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#gray palette">Gray paleete</a></li>
+			</ul>
+          <a class="dropdown-item" href="Icons.html">Icons</a>
+		  <a class="dropdown-item" href="Typography.html">Typography</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UI Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Alerts.html">Alerts</a>
+          <a class="dropdown-item" href="Badges.html">Badges</a>
+          <a class="dropdown-item" href="Buttons.html">Buttons</a>
+		  <a class="dropdown-item" href="Cards.html">Cards</a>
+		  <a class="dropdown-item" href="Collapse.html">Collapse</a>
+		  <a class="dropdown-item" href="Footers.html">Footers</a>
+		  <a class="dropdown-item" href="Forms.html">Form controls</a>
+		  <a class="dropdown-item" href="Grids.html">Grids</a>
+		  <a class="dropdown-item" href="Headers.html">Headers</a>
+		  <a class="dropdown-item" href="Modals.html">Modals</a>
+		  <a class="dropdown-item" href="Navigation.html">Navigation</a>
+		  <a class="dropdown-item" href="Tables.html">Tables</a>
+		  <a class="dropdown-item" href="Writing.html">Writing</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+	<h3>Modals</h3>
+		<p>Modals are used sparingly.  They are to be used to provide the user with more data/details without taking up too much space on the screen.</p>
+		<p>Modals are used in the following situations: to highlight history information and as a way to show Internal Court Connect users more details regarding a "MUST APPEAR" designation.</p>
+		
+	<div class="card border-info shadow p-3 mb-5">
+	<h4>History modals</h4>
+		<p>History information will be presented in a modal.  Modal headers will be in adjective + noun format (i.e. "Case ID History").</p>
+		
+		<h5>Behavior</h5>
+			<p>Modals will pop out when the history indicator is pressed.</p>
+		<h5>Data layout</h5>
+			<p>History data will be presented in the format indicated in the example below.</p>
+			<hr>
+
+<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+    	View code
+  		</button>
+		
+		<div class="collapse" id="collapseExample2">
+  		<div class="card card-body">
+<!-- Button trigger modal -->
+<h6><em>Example</em></h6>
+		<dl class="row">
+			<dt class="col-sm-2">
+
+<button *nglf="showCaseStatusHistory()" type="button" class="no-print btn btn-primary btn-history" data-toggle="modal" data-target="#caseStatusHistory" data-placement="right" title="Case Status History">H</button>
+			</dt>
+			<dd class="col-sm-10"><pre><code>
+		&lt;div class="modal fade" id="caseStatusHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+			&lt;div class="modal-dialog modal-lg" role="document"&gt;
+    			&lt;div class="modal-content"&gt;
+      				&lt;div class="modal-header"&gt;
+        				&lt;h5 class="modal-title" id="exampleModalLabel"&gt;Case ID History&lt;/h5&gt;
+        				&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          					&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+        				&lt;/button&gt;
+      				&lt;/div&gt;
+      				&lt;div class="modal-body"&gt;...&lt;/div&gt;
+					&lt;div class="modal-footer"&gt;
+        				&lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+      					&lt;/div&gt;
+    				&lt;/div&gt;
+  			&lt;/div&gt;
+		&lt;/div&gt;
+</code></pre></dd>
+
+		</dl>
+
+<!-- Actual modal button for Case View-->
+
+
+<div class="modal fade" id="caseStatusHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Case ID History</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">C/D</th>
+      <th scope="col">Previous Case ID #</th>
+      <th scope="col">Reason</th>
+      <th scope="col">Date</th>
+	  <th scope="col">User</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">C</th>
+      <td>60CR-17-10</td>
+      <td>CORRECTED CASE ID</td>
+      <td>10-JAN-2017</td>
+	  <td>LMWADLEY</td>
+    </tr>
+    <tr>
+      <th scope="row">C</th>
+      <td>60CR-16-100</td>
+      <td>ENTERED IN ERROR</td>
+      <td>09-JAN-2017</td>
+	  <td>LMWADLEY</td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+		
+</body>
+</html>

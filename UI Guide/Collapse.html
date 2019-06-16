@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+<style>
+
+.card {
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+.container {
+	margin-top: 50px !important;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.material-icons {
+	position: relative;
+	display: inline-block;
+	vertical-align: left;
+	font-size: 15px;
+}
+
+#dark-nav {
+	background-color: #000034 !important;
+}
+
+.panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        background-color: rgb(241,241,241);
+		color: black;
+        border-color: #EEEEEE;
+    }
+
+    .panel-title {
+        font-size: 18px;
+		color:#000000 !important;
+    }
+
+    .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .more-less {
+        float: right;
+        color: #212121;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+
+
+</style>
+
+<script>
+function toggleIcon(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".more-less")
+        .toggleClass(' keyboard_arrow_left keyboard_arrow_down');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+</script>
+<head>
+	<title>UI Style Guide</title>
+	<nav class="navbar navbar-dark bg-dark" id="dark-nav">
+	<a class="navbar-brand" href="#">
+	<img src="https://www.techonline.com/img/tmp/logo-placeholder.png" width=100 height=100 class="d-inline-block align-middle" alt=" ">
+	US Government Agency | UI Style Guide
+	</a>
+	</nav>
+	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d9b9a;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="Home.html">Home</a>
+		</li>
+       <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Design Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Color Palette.html">Color palette</a>
+		  	<ul class="dropdown-submenu">
+				<li class="dropdown-item"><a tabindex="-1" href="#primary palette">Primary palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#accent palette">Accent palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#gray palette">Gray paleete</a></li>
+			</ul>
+          <a class="dropdown-item" href="Icons.html">Icons</a>
+		  <a class="dropdown-item" href="Typography.html">Typography</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UI Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Alerts.html">Alerts</a>
+          <a class="dropdown-item" href="Badges.html">Badges</a>
+          <a class="dropdown-item" href="Buttons.html">Buttons</a>
+		  <a class="dropdown-item" href="Cards.html">Cards</a>
+		  <a class="dropdown-item" href="Collapse.html">Collapse</a>
+		  <a class="dropdown-item" href="Footers.html">Footers</a>
+		  <a class="dropdown-item" href="Forms.html">Form controls</a>
+		  <a class="dropdown-item" href="Grids.html">Grids</a>
+		  <a class="dropdown-item" href="Headers.html">Headers</a>
+		  <a class="dropdown-item" href="Modals.html">Modals</a>
+		  <a class="dropdown-item" href="Navigation.html">Navigation</a>
+		  <a class="dropdown-item" href="Tables.html">Tables</a>
+		  <a class="dropdown-item" href="Writing.html">Writing</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+	<h2>Collapse</h2>
+	<p>Collapsible components are a list of headers that can be clicked to hide or reveal additional content.</p>
+		<button class="btn btn-secondary btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    	Accessibility
+  		</button>
+
+		<div class="collapse" id="collapseExample">
+  		<div class="card card-body">
+		
+				<ul>
+					<li>Code header areas are collapsible sections as <samp>button</samp> so they are usable with both screen readers and keyboards.</li>
+					<li>Buttons should state if they are expanded with <samp>aria-expanded="true"</samp></li>
+					<li>Each content area will have its <samp>aria-hidden</samp> attribute set to either <samp>true</samp> or <samp>false</samp> by the component, depending on its corresponding button's <samp>aria-expanded</samp> attribute.  To ensure that your content is accessible in the event that JavaScript does not load or is disabled, you should set <samp>aria-hidden="true"</samp> on any of your content areas.</li>
+				</ul>
+		</div>
+		</div>
+		<br>
+	<div class="card border-info shadow p-3 mb-5">
+		<div class="card-title"><h4>Specifications</h4>
+		<p>The collapse panes will default to open with the option of collapsing each section.</p>
+		<p>On the right hand of the header there will be an arrow icon, which will change according to whether or not the section is open or closed.  See below for an example.</p>
+		
+		<hr>
+	
+			<div class="accordion" id="accordionExample">
+  				
+				<div class="card">
+					<div class="card-header text-left" id="headingOne">
+      					<h5 class="mb-0">     
+						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">   					
+          					Example collapse component
+						</button>
+        					
+      					</h5>
+    				</div>
+				
+    			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      				<div class="card-body">
+       				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+     				</div>
+    			</div>
+  			</div>
+		</div>
+
+	
+	
+	<hr>
+	
+	<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+    	Code
+  		</button>
+
+		<div class="collapse" id="collapseExample1">
+  		<div class="card card-body">
+	
+			<pre><code>&lt;div class="accordion" id="accordionExample"&gt;
+	&lt;div class="card"&gt;
+		&lt;div class="card-header text-left" id="headingOne"&gt;
+			&lt;h5 class="mb-0"&gt;
+			&lt;button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+				Example collapse component
+			&lt;/button&gt;
+			&lt;/h5&gt;
+		&lt;/div&gt;
+	&lt;div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"&gt;
+		&lt;div class="card-body"&gt;
+		Sample text goes here.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="card border-warning shadow p-3 mb-5">
+	<h4>Usability</h4>
+	<h5>When to use</h5>
+	<ul>
+		<li>Use collapsible components to organize case view information (i.e. case, party, event, financial, etc.).</li>
+		<li>Due to a large quantity of information in a single case view, a collapsible pane allows users to expand the information needed immediately and hide information not needed at the moment.</li>
+	</ul>
+	<h5>Guidance</h5>
+	<ul>
+		<li>Allow users to click anywhere in the header area to expand or collapse content.</li>
+		<li>Make sure interactive elements within the collapsible region are far enough from the headers that users don't accidentally trigger a collapse.</li>
+	</ul>
+</div>	
+
+
+		
+</body>
+</html>

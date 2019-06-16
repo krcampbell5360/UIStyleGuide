@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+
+#dark-nav {
+	background-color: #000034 !important;
+}
+
+.container {
+	margin-top: 50px !important;
+}
+
+</style>
+
+<head>
+	<title>UI Style Guide</title>
+	<nav class="navbar navbar-dark bg-dark" id="dark-nav">
+	<a class="navbar-brand" href="#">
+	<img src="https://www.techonline.com/img/tmp/logo-placeholder.png" width=100 height=100 class="d-inline-block align-middle" alt=" ">
+	US Government Agency | UI Style Guide
+	</a>
+	</nav>
+	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d9b9a;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="Home.html">Home</a>
+		</li>
+       <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Design Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Color Palette.html">Color palette</a>
+		  	<ul class="dropdown-submenu">
+				<li class="dropdown-item"><a tabindex="-1" href="#primary palette">Primary palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#accent palette">Accent palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#gray palette">Gray paleete</a></li>
+			</ul>
+          <a class="dropdown-item" href="Icons.html">Icons</a>
+		  <a class="dropdown-item" href="Typography.html">Typography</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UI Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Alerts.html">Alerts</a>
+          <a class="dropdown-item" href="Badges.html">Badges</a>
+          <a class="dropdown-item" href="Buttons.html">Buttons</a>
+		  <a class="dropdown-item" href="Cards.html">Cards</a>
+		  <a class="dropdown-item" href="Collapse.html">Collapse</a>
+		  <a class="dropdown-item" href="Footers.html">Footers</a>
+		  <a class="dropdown-item" href="Forms.html">Form controls</a>
+		  <a class="dropdown-item" href="Grids.html">Grids</a>
+		  <a class="dropdown-item" href="Headers.html">Headers</a>
+		  <a class="dropdown-item" href="Modals.html">Modals</a>
+		  <a class="dropdown-item" href="Navigation.html">Navigation</a>
+		  <a class="dropdown-item" href="Tables.html">Tables</a>
+		  <a class="dropdown-item" href="Writing.html">Writing</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+
+<div class="container">
+	<h2>Buttons</h2>
+	<p>Buttons signal actions.</p>
+	<h4>Accessibility</h4>
+	<p>Graphic contrast should be at a ratio of at least 3:1.</p>
+
+	
+	<div class="card border-info shadow p-3 mb-5 bg-white rounded">
+	<div class="card-title"><h4>Search button</h4></div>
+	<p>A search button may be represented in one of two ways.  It may feature the text "Search" or an icon.</p>
+	<hr>
+	<h5>Search icon</h5>
+		<div class="card-body">
+		<dl class="row">
+			<dt class="col-sm-2"><i class="material-icons">search</i></dt>
+			<dd class="col-sm-10"><pre><code>&lt;i class="material-icons"&gt;search&lt;/i&gt;</code></pre></dd>
+		</dl>
+		</div>
+	<hr>
+	<h5>Search text</h5>
+		<div class="card-body">
+		<dl class="row">
+			<dt class="col-sm-2"><button type="button" class="btn btn-primary">Search</button></dt>
+			<dd class="col-sm-10"><pre><code>&lt;button type="button" class="btn btn-primary"&gt;Search&lt;/button&gt;</code></pre></dd>
+		</dl>
+		</div>	
+	</div>
+
+
+	
+
+	<div class="card border-warning shadow p-3 mb-5 bg-white rounded">
+	<div class="card-title"><h4>Pay now buttons</h4></div>
+	<div class="card-body">
+	 	<p>If the user has the ability to pay on their account online, a button allowing users to access ePay will be included in Financials in the balance card components.</p>	
+		<p>Veering from the general rules surrounding headings and button text, for this button, the text will be in all caps to signify its importance.</p>	
+		<hr>
+		<dl class="row">
+			<dt class="col-sm-2"><button type="button" class="btn btn-warning">PAY NOW</button></dt>
+			<dd class="col-sm-10"><pre><code>&lt;button type="button" class="btn btn-warning"&gt;PAY NOW&lt;/button&gt;</code></pre></dd>
+		</dl>
+	</div>		
+	</div>
+
+				
+
+	<div class="card border-info shadow p-3 mb-5 bg-white rounded">
+	<div class="card-title"><h4>Usability</h4>			
+	<div class="card-body">
+		<h5>When to use</h5>
+		<p>Use buttons for the most important actions on the page.</p>
+		<h5>Guidance</h5>
+		<ul>
+			<li>Use sentence case for button labels</li>
+			<li>Make the first word on buttons a verb</li>
+			<li>Consider adding an icon to indicate specific actions</li>
+			<li>Make sure buttons look clickable - use color variations to distinguish static, hover and active states</li>
+		</ul>
+	</div>
+	</div>
+	</div>
+<h4>Related content</h4>
+<hr>
+<div class="row">
+		<div class="col-sm-6">
+			<div class="card bg-light shadow p-3 mb-5">
+					<div class="card-body">
+						<h5 class="card-title">Cards</h5>
+						<p class="card-text">Cards are flexible content containers that can be modified to include headers, footers, and background colors.  Click below to find out more.</p>
+						<a href="Cards.html" class="btn btn-primary">Learn more</a>
+					</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="card bg-light shadow p-3 mb-5">
+					<div class="card-body">
+						<h5 class="card-title">Icons</h5>
+						<p class="card-text">Icons help the user locate menu or navigation items quickly while saving space on a web page.  Click below to find out more.</p>
+						<a href="Icons.html" class="btn btn-primary">Learn more</a>
+					</div>
+			</div>
+		</div>
+	
+</div>
+
+</body>
+</html>

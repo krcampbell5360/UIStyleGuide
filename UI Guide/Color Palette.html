@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container {
+	margin-top: 50px !important;
+}
+
+
+#dark-nav {
+	background-color: #000034 !important;
+}
+#accessibility-card {
+	padding: 10px;
+}
+
+</style>
+<head>
+	<title>UI Style Guide</title>
+	<nav class="navbar navbar-dark bg-dark" id="dark-nav">
+	<a class="navbar-brand" href="#">
+	<img src="https://www.techonline.com/img/tmp/logo-placeholder.png" width=100 height=100 class="d-inline-block align-middle" alt=" ">
+	US Government Agency | UI Style Guide
+	</a>
+	</nav>
+	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d9b9a;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="Home.html">Home</a>
+		</li>
+       <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Design Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Color Palette.html">Color palette</a>
+		  	<ul class="dropdown-submenu">
+				<li class="dropdown-item"><a tabindex="-1" href="#primary palette">Primary palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#accent palette">Accent palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#gray palette">Gray paleete</a></li>
+			</ul>
+          <a class="dropdown-item" href="Icons.html">Icons</a>
+		  <a class="dropdown-item" href="Typography.html">Typography</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UI Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Alerts.html">Alerts</a>
+          <a class="dropdown-item" href="Badges.html">Badges</a>
+          <a class="dropdown-item" href="Buttons.html">Buttons</a>
+		  <a class="dropdown-item" href="Cards.html">Cards</a>
+		  <a class="dropdown-item" href="Collapse.html">Collapse</a>
+		  <a class="dropdown-item" href="Footers.html">Footers</a>
+		  <a class="dropdown-item" href="Forms.html">Form controls</a>
+		  <a class="dropdown-item" href="Grids.html">Grids</a>
+		  <a class="dropdown-item" href="Headers.html">Headers</a>
+		  <a class="dropdown-item" href="Modals.html">Modals</a>
+		  <a class="dropdown-item" href="Navigation.html">Navigation</a>
+		  <a class="dropdown-item" href="Tables.html">Tables</a>
+		  <a class="dropdown-item" href="Writing.html">Writing</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<h2 id="color-palette">Color palette</h2>
+<p id="color-specs">For more details on the use of color, please refer to each UI Component.</p>
+</div>
+
+<div class="container">
+<div class="card border-primary mb-3 shadow p-3 mb-5 bg-white rounded" id="accessibility-card">
+<h4 id="accessibility">Text Accessibility</h4>
+<p>In accordance with the accessibility requirements established by <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">Web Content Accessibility Guidelines</a>, color contrast should be at least 4.5:1.  This ratio meets success criteria 1.4.3 which allows users who are unable to determine certain colors to read content.</p>
+</div>
+</div>
+
+<div class="container">
+<h4 id="primary palette">Primary palette</h4>
+<p>Our primary palette represents the main page theme.</p>
+<div class="row">
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/0d3257.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#0D3257</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/215e93.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#215E93</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/343642.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#343642</h5>
+    </div>
+</div>
+
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/f9c642.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#F9C642</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/981b1e.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#981B1E</h5>
+    </div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="container">
+<h4 id="accent palette">Accent palette</h4>
+<p>Colors to highlight important content and action items such as alerts, notifications, buttons, etc.</p>
+<div class="row">
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/27a2b8.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#27A2B8</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/007bff.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#007BFF</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/721c24.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#721C24</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/dc3545.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#DC3545</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/f8d7da.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#F8D7DA</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/856404.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#856404</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/ffc107.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#FFC107</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/fce205.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#FCE205</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/fff3cd.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#FFF3CD</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/2e8540.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#2E8540</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/28a745.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#28A745</h5>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<hr>
+
+<div class="container">
+<h4 id="gray palette">Gray palette</h4>
+<p>This palette will be used mainly for background blocks and large content areas.</p>
+<div class="row">
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/343a40.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#343A40</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/5b616b.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#5B616B</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/6c757d.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#6C757D</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/d6d7d9.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#D6D7D9</h5>
+    </div>
+</div>
+
+<div class="card col-3 shadow-sm p-3 mb-5 bg-white rounded" style="width:18rem">
+	<img src="https://www.colorhexa.com/f1f1f1.png" alt="..." class="rounded">
+  	<div class="card-body">
+    <h5 class="card-title" style="text-align:center">#F1F1F1</h5>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>

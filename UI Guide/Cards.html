@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+
+#dark-nav {
+	background-color: #000034 !important;
+}
+
+.container {
+	margin-top: 50px !important;
+}
+
+.highlight {
+	background-color: #f8f9fa;
+}
+</style>
+
+<head>
+	<title>UI Style Guide</title>
+	<nav class="navbar navbar-dark bg-dark" id="dark-nav">
+	<a class="navbar-brand" href="#">
+	<img src="https://www.techonline.com/img/tmp/logo-placeholder.png" width=100 height=100 class="d-inline-block align-middle" alt=" ">
+	US Government Agency | UI Style Guide
+	</a>
+	</nav>
+	
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2d9b9a;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="Home.html">Home</a>
+		</li>
+       <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Design Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Color Palette.html">Color palette</a>
+		  	<ul class="dropdown-submenu">
+				<li class="dropdown-item"><a tabindex="-1" href="#primary palette">Primary palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#accent palette">Accent palette</a></li>
+				<li class="dropdown-item"><a tabindex="-1" href="#gray palette">Gray paleete</a></li>
+			</ul>
+          <a class="dropdown-item" href="Icons.html">Icons</a>
+		  <a class="dropdown-item" href="Typography.html">Typography</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UI Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Alerts.html">Alerts</a>
+          <a class="dropdown-item" href="Badges.html">Badges</a>
+          <a class="dropdown-item" href="Buttons.html">Buttons</a>
+		  <a class="dropdown-item" href="Cards.html">Cards</a>
+		  <a class="dropdown-item" href="Collapse.html">Collapse</a>
+		  <a class="dropdown-item" href="Footers.html">Footers</a>
+		  <a class="dropdown-item" href="Forms.html">Form controls</a>
+		  <a class="dropdown-item" href="Grids.html">Grids</a>
+		  <a class="dropdown-item" href="Headers.html">Headers</a>
+		  <a class="dropdown-item" href="Modals.html">Modals</a>
+		  <a class="dropdown-item" href="Navigation.html">Navigation</a>
+		  <a class="dropdown-item" href="Tables.html">Tables</a>
+		  <a class="dropdown-item" href="Writing.html">Writing</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+<h2 id="overview">Cards</h2>
+<p>*Code from <a href="https://getbootstrap.com/docs/4.1/components/card/">Bootstrap</a></p>
+<h4>Accessibility</h4>
+<p>For large text, the contrast ratio passes as 3:1 according to the WCAG 2.0 standards.</p>
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="card border-info shadow p-3 mb-5 bg-white rounded">
+			<div class="card-title"><h4>Past due balance</h4></div>
+				<div class="card-body">
+					<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Danger card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				
+				</div>	
+				<hr>
+		<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    	More information
+  		</button>
+
+		<div class="collapse" id="collapseExample">
+  		<div class="card card-body">
+		<pre><code>&lt;div class="card text-white bg-danger mb-3" style="max-width: 18rem;"&gt;
+	&lt;div class="card-header"&gt;Header&lt;/div&gt;
+		&lt;div class="card-body"&gt;
+			&lt;h5 class="card-title"&gt;Danger card title&lt;/h5&gt;
+				&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&gt;&lt;/p&gt;
+		&lt;/div&gt;
+&lt;/div&gt;</code></pre></dd>
+				<h5>When to use</h5>
+				<p>Past due balances will appear in the above card from Bootstrap.  The header will say "Past due balance" in sentence case with the title being the past due balance.  The card content may contain something indicating the date payment was due or "This amount contains a past due amount."</p>
+				<p>Buttons or badges may appear on this card centered below the card content.  Below are the buttons or badges that may appear depending on the user's ability to pay or not.</p>
+		
+			<dl class="row">
+			<dt class="col-sm-4"><button type="button" class="btn btn-warning">PAY NOW</button></dt>
+			<dd class="col-sm-8"><a href="#" class="badge badge-secondary"><h6>MUST APPEAR</h6></a></dd>
+			</dl>	
+		</div>
+	</div>
+</div>
+</div>
+
+		<div class="col-sm-6">
+		<div class="card border-info shadow p-3 mb-5 bg-white rounded">
+			<div class="card-title"><h4>Current balance due</h4></div>
+				<div class="card-body">
+					<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Success card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+
+				
+			</div>
+			<hr>
+		<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+    	More information
+  		</button>
+
+		<div class="collapse" id="collapseExample2">
+  		<div class="card card-body">
+		<pre><code>&lt;div class="card text-white bg-success mb-3" style="max-width: 18rem;"&gt;
+	&lt;div class="card-header"&gt;Header&lt;/div&gt;
+		&lt;div class="card-body"&gt;
+			&lt;h5 class="card-title"&gt;Success card title&lt;/h5&gt;
+				&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&gt;&lt;/p&gt;
+		&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			<h5>When to use</h5>
+					<p>Current balances will appear in the above card from Bootstrap.  The header will say "Balance" in sentence case with the title being the balance amount.  The card content may contain the next payment due date.</p>
+					<p>Buttons or badges may appear on this card centered below the card content.  Below are the buttons or badges that may appear depending on the user's ability to pay or not.</p>
+			<dl class="row">
+			<dt class="col-sm-4"><button type="button" class="btn btn-warning">PAY NOW</button></dt>
+			<dd class="col-sm-8"><a href="#" class="badge badge-secondary"><h6>MUST APPEAR</h6></a></dd>
+			</dl>
+		</div>
+	</div>
+	</div>
+	</div>
+		
+
+		<div class="col-sm-6">
+		<div class="card border-info shadow p-3 mb-5 bg-white rounded">
+			<div class="card-title"><h4>Pending balance</h4></div>
+				<div class="card-body">
+				<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Info card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+			</div>
+			<hr>
+		<button class="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+    	More information
+  		</button>
+
+		<div class="collapse" id="collapseExample3">
+  		<div class="card card-body">
+		<pre><code>&lt;div class="card text-white bg-info mb-3" style="max-width: 18rem;"&gt;
+	&lt;div class="card-header"&gt;Header&lt;/div&gt;
+		&lt;div class="card-body"&gt;
+			&lt;h5 class="card-title"&gt;Info card title&lt;/h5&gt;
+				&lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&gt;&lt;/p&gt;
+		&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+			<h5>When to use</h5>
+					<p>Pending balances will appear in the above card from Bootstrap.  The header will say "Pending balance" in sentence case with the title being the balance amount.  The card content may contain the next payment due date.</p>
+					<p>Buttons or badges may appear on this card centered below the card content.  Below are the buttons or badges that may appear depending on the user's ability to pay or not.</p>
+			<dl class="row">
+			<dt class="col-sm-4"><button type="button" class="btn btn-warning">PAY NOW</button></dt>
+			<dd class="col-sm-8"><a href="#" class="badge badge-secondary"><h6>MUST APPEAR</h6></a></dd>
+			</dl>
+		</div>
+		</div>
+		</div>
+</div>
+	
+<div class="container">
+<h4>Related content</h4>
+<hr>	
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card bg-light shadow p-3 mb-5">
+					<div class="card-body">
+						<h5 class="card-title">Buttons</h5>
+						<p class="card-text">Buttons signal actions.  Click below to find out more.</p>
+						<a href="Buttons.html" class="btn btn-primary">Learn more</a>
+					</div>
+			</div>
+		</div>
+	
+
+		<div class="col-sm-6">
+			<div class="card bg-light shadow p-3 mb-5">
+					<div class="card-body">
+						<h5 class="card-title">Badges</h5>
+						<p class="card-text">Badges help organize important details that may be useful to users but are unnecessary for default page display.  Click below to find out more.</p>
+						<a href="Badges.html" class="btn btn-primary">Learn more</a>
+					</div>
+			</div>
+		</div>
+</div>	
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
